@@ -4,8 +4,17 @@ class App extends React.Component {
     render(){
         return(
             <div>
-                <h1>React Auth</h1>
-                <p>Authentication &amp; Session Cookies</p>
+                <header>
+                    <h1>React Auth</h1>
+                    <p>Authentication &amp; Session Cookies</p>
+                </header>
+
+                
+
+                <footer>
+                    <p>footer</p>
+                </footer>
+                
             </div>
         )
     }
