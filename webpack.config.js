@@ -5,7 +5,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         publicPath: '/dist/',
-        path: path.resolve(__dirname, dist);
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -13,7 +13,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: ‘babel-loader’
+                    loader: 'babel-loader'
                 }
             }
         ]
