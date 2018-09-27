@@ -19,23 +19,19 @@ class App extends React.Component {
                     <div>
                         <nav>
                             <ul>
-                                <Link to="/" >Home</Link>
-                                <Link to="/login" >Login</Link>
+                                <li><Link to="/" >Home</Link></li>
+                                <li><Link to="/login" >Login</Link></li>
+                                <li><Link to="/dashboard" >Dasboard</Link></li>
                                 
                             </ul>
                         </nav>
 
                         <Route exact path="/" component={Home} />
-                        <Switch>
-                            {/* once logged in these two components swap */}
-                            <Route path="/dashboard" component={Dash} />
-                            <Route path="/login" component={Login} />
-                        </Switch>
+                        <Route exact path="/dashboard" component={Dash} />
+                        <Route exact path="/login" component={Login} />
                         
-
+                        
                     </div>
-                    
-                
                 </Router>
 
                 
