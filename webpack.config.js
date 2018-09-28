@@ -4,8 +4,8 @@ module.exports = {
     entry: './src/app.js',
     output: {
         filename: 'bundle.js',
-        publicPath: '/dist/',
-        path: path.resolve(__dirname, 'dist')
+        
+        path: path.resolve(__dirname)
     },
     module: {
         rules: [
@@ -22,7 +22,9 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     devServer: {
-        open: 'true'
+        open: 'true',
+        contentBase: path.join(__dirname, 'dist'),
+        
     }
 
 }
