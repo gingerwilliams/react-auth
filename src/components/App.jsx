@@ -30,7 +30,6 @@ class App extends React.Component {
                         <Route exact path="/dashboard" component={Dash} />
                         <Route exact path="/login" component={Login} />
                         
-                        
                     </div>
                 </Router>
 
