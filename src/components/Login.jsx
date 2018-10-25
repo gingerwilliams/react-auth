@@ -14,25 +14,7 @@ class Login extends React.Component{
         return(
             <div>
                 <h1>Login</h1>
-                
-                    <input 
-                        name="username" 
-                        type="text" 
-                        placeholder="username"
-                        onChange={this.handleChange}
-                    
-                    />
-                    <input 
-                        name="password" 
-                        type="password"
-                        placeholder="password"
-                        onChange={this.handleChange}
-                    />
-                    <button 
-                        onClick={this.login} 
-                        type="submit" 
-                    >Submit</button>
-                
+            
             </div>
         )
     }
