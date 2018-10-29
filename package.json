@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint *.js",
     "start": "nodemon index.js",
     "dev": "webpack-dev-server --mode development --hot --open --config ./webpack.config.js",
     "build": "webpack --mode production"
@@ -14,9 +15,15 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-env": "^2.4.1",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",

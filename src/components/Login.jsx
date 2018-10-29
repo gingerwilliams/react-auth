@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import {Redirect, withRouter} from 'react-router-dom';
 
 const fakeAuth = {
     isAuthenticated: false,
@@ -21,16 +21,23 @@ class Login extends React.Component{
 
     login = () => {
         fakeAuth.authenticate(() => {
-            this.setState({ redirectToReferrer: true });
+            this.setState({ 
+                redirectToReferrer: true
+            });
         });
     };
 
-
     render(){
+       
         let { from } = this.props.location.state || { from: { pathname: "/" } };
+        // let from = this.props.location.state;
         let { redirectToReferrer } = this.state;
     
-        if (redirectToReferrer) return <Redirect to={from} />;
+        console.log(from);
+        if (redirectToReferrer){
+            console.log("true");
+            return <Redirect to={from} />
+        }
     
         return (
           <div>
@@ -42,4 +49,4 @@ class Login extends React.Component{
 
 }
 
-export default Login;
+export default withRouter(Login);
