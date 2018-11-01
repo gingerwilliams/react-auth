@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "auth0-js": "^9.8.1",
     "babel": "^6.23.0",
     "babel-env": "^2.4.1",
     "babel-loader": "^7.1.5",
@@ -25,7 +26,5 @@
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
   },
-  "dependencies": {
-    "auth0-js": "^9.8.1"
-  }
+  "dependencies": {}
 }

@@ -22,8 +22,8 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        port: 3000
+        contentBase: path.join(__dirname, 'dist')
+        // port: 3000
         
     }
 
